@@ -7,6 +7,7 @@ class Solution {
 
                 StringBuilder s2 = new StringBuilder(s1).reverse();
                 s1=s2.toString();
+                
             }
             else{
                 s1+=s.charAt(i);
