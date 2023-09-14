@@ -10,7 +10,7 @@ class Solution {
 
         String acronym = "";
         for(int i=0; i<arr.length; i++){
-            acronym = acronym+(arr[i].substring(0,1)); 
+            acronym = acronym + (arr[i].substring(0,1)); 
         }
 
         if(acronym.equals(s)){
