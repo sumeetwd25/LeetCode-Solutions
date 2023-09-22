@@ -3,13 +3,13 @@ class Solution {
 
         List<String> list = new ArrayList<>();
 
-        String sep = Character.toString(separator);
-        if (".|[$(){}^?*+\\".indexOf(separator) != -1) {
-            sep = "\\" + sep;
-        }
+        // String sep = Character.toString(separator);
+        // if (".|[$(){}^?*+\\".indexOf(separator) != -1) {
+        //     sep = "\\" + sep;
+        // }
 
         for(String word : words){
-            String arr[]=word.split(sep);
+            String arr[]=word.split("["+separator+"]");
 
             for(String e : arr){
                 if(!e.isEmpty())
