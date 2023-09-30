@@ -31,7 +31,6 @@ class Solution {
             for(String i:arr){
                 s1+=i;
             }
-
             return s1;
         }
     }
