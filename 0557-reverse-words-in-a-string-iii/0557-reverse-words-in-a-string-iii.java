@@ -4,15 +4,15 @@ class Solution {
 
         for(int i=0; i<arr.length; i++){
 
-            String x = "";
-            for(int j=arr[i].length()-1; j>=0; j--){
-                x+=arr[i].charAt(j);
-            }
-            arr[i] = x;
-
             //method 2
-            // StringBuilder builder = new StringBuilder(arr[i]).reverse();
-            // arr[i] = builder.toString();
+            // String x = "";
+            // for(int j=arr[i].length()-1; j>=0; j--){
+            //     x+=arr[i].charAt(j);
+            // }
+            // arr[i] = x;
+
+            StringBuilder builder = new StringBuilder(arr[i]).reverse();
+            arr[i] = builder.toString();
         }
 
         String reverse = "";
