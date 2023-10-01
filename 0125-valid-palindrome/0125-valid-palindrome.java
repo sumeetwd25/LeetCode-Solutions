@@ -1,5 +1,6 @@
 class Solution {
     public boolean isPalindrome(String s) {
+        s=s.toLowerCase();
         String arr[] = s.split(" ");
         String s1 = "";
         
@@ -16,7 +17,7 @@ class Solution {
         StringBuilder builder = new StringBuilder(s1).reverse();
         String s2 = builder.toString();
 
-        if(s1.toLowerCase().equals(s2.toLowerCase())){
+        if(s1.equals(s2)){
             return true;
         }
         else{
