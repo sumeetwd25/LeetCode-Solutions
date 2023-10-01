@@ -10,12 +10,7 @@ class Solution {
         String reverse = "";
         for(int i=0; i<arr.length; i++){
             
-            if(i==arr.length-1){
-                reverse+=arr[i];
-            }
-            else{
-                reverse+=arr[i]+" ";
-            }
+            reverse = String.join(" ", arr);
             
         }
         return reverse;
