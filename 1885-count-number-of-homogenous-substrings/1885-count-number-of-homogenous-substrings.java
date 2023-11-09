@@ -1,17 +1,18 @@
 class Solution {
     public int countHomogenous(String s) {
-        int left = 0;
-        long res = 0;
-
-        for (int right = 0; right < s.length(); right++) {
-            if (s.charAt(left) == s.charAt(right)) {
-                res += right - left + 1;
+        long homogeneous = 0;
+        int count = 1;
+        for (int i = 0; i < s.length(); i++) {
+            
+            if(i + 1 < s.length() && s.charAt(i) == s.charAt(i + 1)) {
+                count++;
+                homogeneous += count;
             }
             else {
-                res += 1;
-                left = right;
+                count = 1;
+                homogeneous += count;
             }
         }
-        return (int) (res % (1000000007));
+        return (int) (homogeneous % (1000000007));
     }
 }
